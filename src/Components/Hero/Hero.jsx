@@ -14,7 +14,7 @@ function Hero() {
           </p>
           <div className="actions">
             <a className="btn" href="#projects">View Projects</a>
-            <a className="btn ghost" href="CV.pdf" download >Download CV</a>
+            <a className="btn ghost" href="/CV.pdf" download >Download CV</a>
           </div>
           <ul className="badges">
             <li>3+ yrs HTML/CSS/Bootstrap</li>
