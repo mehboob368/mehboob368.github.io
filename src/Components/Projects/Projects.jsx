@@ -17,20 +17,19 @@ const projects = [
   },
   {
     title: "Personal Portfolio Website",
-    desc: "An interactive and animated personal portfolio showcasing projects and skills with smootth scrolling and and reusable components.",
+    desc: "An interactive and animated personal portfolio showcasing projects and skills with smooth scrolling and reusable components.",
     tags: ["React", "CSS", "Vite"],
     link: "https://mehboob368.github.io/",
     image: portfolio,
   },
   {
     title: "Educational Platform",
-    desc: "A modern studying website providing structured courses and interactive learnning experiences, built with React and responsive design.",
+    desc: "A modern studying website providing structured courses and interactive learning experiences, built with React and responsive design.",
     tags: ["React", "CSS", "Vite"],
-    link: "https://mehboob368.github.io/ReactJSProject.github.io/",
+    link: "https://mehboob368.github.io/ReactJSProject/",
     image: edusity,
   },
 ];
-
 
 function Projects() {
   return (
@@ -42,7 +41,7 @@ function Projects() {
           {projects.map((p) => (
             <article key={p.title} className="project card">
               <div className="thumb">
-                <img src={p.image} alt={p.title} loading="lazy" />
+                <img src={p.image} alt={`${p.title} screenshot`} loading="lazy" />
               </div>
               <div className="body">
                 <h3>{p.title}</h3>
@@ -53,10 +52,10 @@ function Projects() {
                   ))}
                 </ul>
                 <div className="actions">
-                  <a className="btn" href={p.link}>
+                  <a className="btn" href={p.link} target="_blank" rel="noopener noreferrer">
                     View
                   </a>
-                  <a className="btn ghost" href="#contact">
+                  <a className="btn ghost" href="mailto:muhammadmehboobz7869@gmail.com">
                     Hire Me
                   </a>
                 </div>
