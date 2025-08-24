@@ -24,7 +24,7 @@ const projects = [
   },
   {
     title: "Educational Platform",
-    desc: "A modern studying website providing structured courses and interactive learning experiences, built with React and responsive design.",
+    desc: "A modern studying website providing structured courses and interactive learnning experiences, built with React and responsive design.",
     tags: ["React", "CSS", "Vite"],
     link: "https://mehboob368.github.io/ReactJSProject.github.io/",
     image: edusity,
