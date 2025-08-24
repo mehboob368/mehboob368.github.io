@@ -1,0 +1,14 @@
+.contact { grid-template-columns: 1fr 1.1fr; gap: 24px; }
+.info { padding: 24px; }
+.form { padding: 20px; display: grid; gap: 14px; }
+label { display: grid; gap: 6px; font-weight: 600; }
+input, textarea {
+  width: 100%; padding: 12px 14px; border-radius: 10px; border: 1px solid rgba(148,163,184,.22);
+  background: rgba(2,6,23,.5); color: var(--text);
+}
+input:focus, textarea:focus { outline: 2px solid rgba(56,189,248,.35); border-color: rgba(56,189,248,.5); }
+.status { margin: 6px 2px 0; color: var(--accent); font-weight: 600; }
+.list { margin: 10px 0 0; padding-left: 18px; }
+@media (max-width: 900px) {
+  .contact { grid-template-columns: 1fr; }
+}

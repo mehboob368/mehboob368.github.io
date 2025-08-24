@@ -1,0 +1,45 @@
+.hero-wrap {
+  padding: 40px;
+  display: grid; grid-template-columns: 1.2fr 1fr; gap: 24px; align-items: center;
+  border-radius: 20px;
+}
+.hero-text .kicker { color: var(--brand); font-weight: 700; margin: 0 0 6px; }
+.hero-text h1 { font-size: clamp(32px, 5vw, 52px); margin: 0 0 10px; }
+.hero-text h1 span { color: var(--brand); }
+.hero-text .sub { color: var(--muted); margin: 0 0 18px; }
+.actions { display: flex; gap: 12px; margin-bottom: 16px; flex-wrap: wrap; }
+
+.badges { display: flex; gap: 10px; list-style: none; padding: 0; margin: 12px 0 0; flex-wrap: wrap; }
+.badges li { background: rgba(56,189,248,.12); color: #cbefff; padding: 6px 10px; border-radius: 999px; font-size: 14px; border: 1px solid rgba(56,189,248,.25); }
+
+.hero-art { position: relative; height: 320px; }
+.hero-art .blob {
+  position: absolute; inset: 20% 10% 10% 0;
+  background: radial-gradient(circle at 30% 30%, rgba(56,189,248,.5), rgba(14,165,233,.15) 60%), linear-gradient(180deg, rgba(14,165,233,.25), transparent);
+  border-radius: 30px;
+  filter: blur(1px);
+}
+.hero-art .ring {
+  position: absolute; inset: 10% 0 0 40%;
+  border-radius: 999px; border: 2px dashed rgba(148,163,184,.25);
+  animation: spin 18s linear infinite;
+}
+.hero-art .dots {
+    position: absolute;
+    bottom: 12px;
+    right: 8px;
+    width: 259px;
+    height: 264px;
+    border-radius: 50%;
+    background-image: url(/src/assets/h.png), radial-gradient(rgba(56, 189, 248, .5) 2px, transparent 2px);
+    background-size: 379px 290px;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: .6;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+
+@media (max-width: 940px) {
+  .hero-wrap { grid-template-columns: 1fr; }
+  .hero-art { order: -1; height: 220px; }
+}

@@ -1,0 +1,7 @@
+.about { grid-template-columns: 1.1fr 1fr; }
+.about-card { padding: 24px; }
+.facts, .bullets { margin: 0; padding-left: 18px; }
+.facts li, .bullets li { margin: 8px 0; }
+@media (max-width: 900px) {
+  .about { grid-template-columns: 1fr; }
+}

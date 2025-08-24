@@ -1,0 +1,88 @@
+:root {
+  --bg: #0f172a;          /* slate-900 */
+  --bg-2: #0b1224;
+  --card: #111827;        /* gray-900 */
+  --text: #e5e7eb;        /* gray-200 */
+  --muted: #94a3b8;       /* slate-400 */
+  --brand: #38bdf8;       /* sky-400 */
+  --brand-2: #0ea5e9;     /* sky-500 */
+  --accent: #22c55e;      /* green-500 */
+  --danger: #ef4444;      /* red-500 */
+  --shadow: 0 10px 30px rgba(0,0,0,.25);
+}
+
+* { box-sizing: border-box; }
+html, body, #root { height: 100%; }
+body {
+  margin: 0;
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Inter, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+  color: var(--text);
+  background: radial-gradient(1200px 600px at 80% -10%, rgba(56,189,248,.15), transparent 60%),
+              radial-gradient(1000px 500px at 20% 110%, rgba(14,165,233,.12), transparent 60%),
+              linear-gradient(180deg, var(--bg), var(--bg-2));
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+main { display: block; }
+
+.container {
+  width: min(1100px, 92%);
+  margin: 0 auto;
+}
+
+.section {
+  padding: 80px 0;
+}
+
+.section h2 {
+  font-size: clamp(26px, 3vw, 36px);
+  margin: 0 0 14px;
+  letter-spacing: .2px;
+}
+
+.section p.lead {
+  color: var(--muted);
+  margin-top: 0;
+}
+
+.btn {
+  display: inline-block;
+  background: var(--brand);
+  color: white;
+  padding: 12px 22px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: transform .15s ease, background .15s ease, box-shadow .15s ease;
+  box-shadow: 0 10px 24px rgba(56,189,248,.25);
+}
+.btn:hover { background: var(--brand-2); transform: translateY(-1px); }
+.btn.ghost {
+  background: transparent; border: 1px solid rgba(56,189,248,.4); color: var(--text);
+  box-shadow: none;
+}
+.btn.ghost:hover { border-color: var(--brand); color: white; }
+
+.grid {
+  display: grid;
+  gap: 20px;
+}
+
+/* Utilities */
+.card {
+  background: rgba(17,24,39,.7);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(148,163,184,.15);
+  border-radius: 16px;
+  box-shadow: var(--shadow);
+}
+.shadow-soft { box-shadow: var(--shadow); }
+.round-xl { border-radius: 16px; }
+.muted { color: var(--muted); }
+.hr { height: 1px; background: rgba(148,163,184,.15); margin: 20px 0; }
+
+/* Responsive helpers */
+@media (max-width: 768px) {
+  .section { padding: 60px 0; }
+}
