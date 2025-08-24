@@ -17,7 +17,7 @@ const projects = [
   },
   {
     title: "Personal Portfolio Website",
-    desc: "An interactive and animated personal portfolio showcasing projects and skills with smooth scrolling and and reusable components.",
+    desc: "An interactive and animated personal portfolio showcasing projects and skills with smootth scrolling and and reusable components.",
     tags: ["React", "CSS", "Vite"],
     link: "https://mehboob368.github.io/",
     image: portfolio,
