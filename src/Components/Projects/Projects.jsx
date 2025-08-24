@@ -12,7 +12,7 @@ const projects = [
     title: "E-Commerce Platform",
     desc: "A fully responsive e-commerce website built with React, featuring smooth animations, reusable components, and modern UI design.",
     tags: ["React", "CSS", "Vite"],
-    link: "https://mehboob368.github.io/sport/",
+    link: "https://mehboob368.github.io/sport.github.io/",
     image: sport,
   },
   {
